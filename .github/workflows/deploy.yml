@@ -1,0 +1,50 @@
+name: Build and Deploy
+env:
+  CI: false
+  GITHUB_USERNAME: ${{ github.repository_owner }}
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  USE_GITHUB_DATA: "true"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 12 * * 1"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3.8.1
+        with:
+          node-version: 18.x
+
+      - name: Set git config
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+          git config --global user.name "$(gh api /users/${GITHUB_ACTOR} | jq .name -r)"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+
+      - name: Update npm 🚀
+        run: npm install -g npm@latest
+
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run check-format
+          npm run build
+
+      - name: Deploy 🚀
+        run: |
+          npm run predeploy
+          npm run deploy

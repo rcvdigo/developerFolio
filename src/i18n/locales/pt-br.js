@@ -101,8 +101,8 @@ const translations = {
         {
           schoolName: "Unervisidade Estácio de Sá",
           logo: require('../../assets/images/estacio.jpg'),
-          subHeader: "Bacharelado em Sistemas de Informação",
-          duration: "Agosto de 2019 - Julho de 2023"
+          subHeader: "Tecnólogo em Sistemas Para Internet",
+          duration: "Janeiro de 2021 - Julho de 2024"
         },
       ]
     },
@@ -135,7 +135,7 @@ const translations = {
       title: "Contate-me ☎️",
       subtitle:
         "Discutir um projeto ou somente para dizer oi? Minha caixa de entrada está aberta para conversas",
-      number: "+55-941982086",
+      number: "+55-11941982086",
       emailAddress: "rcvdigo@gmail.com" // TODO: change email
     }
   }

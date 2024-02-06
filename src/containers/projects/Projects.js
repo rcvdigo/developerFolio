@@ -4,7 +4,7 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
-import packageJson from "../../../package.json";
+// import packageJson from "../../../package.json";
 import {usePortfolio} from "../../hooks/usePortofolio";
 import {CONTAINERS} from "../../utils/containers";
 
@@ -25,7 +25,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch(`${packageJson.homepage}/profile.json`)
+      fetch(`${process.env.PUBLIC_URL}/profile.json`)
         .then(result => {
           if (result.ok) {
             return result.json();

@@ -100,16 +100,10 @@ const translations = {
       schools: [
         {
           schoolName: "Unervisidade Estácio de Sá",
-          logo: "https://media.licdn.com/dms/image/C4D0BAQF5imeMDt71KQ/company-logo_100_100/0/1672861931450/mackenzie1870_logo?e=1707350400&v=beta&t=3YCJo6aVctFfqKgu8prZmWji0GlCPThiq3reTAeoyns",
+          logo: require('../../assets/images/estacio.jpg'),
           subHeader: "Bacharelado em Sistemas de Informação",
           duration: "Agosto de 2019 - Julho de 2023"
         },
-        // {
-        //   schoolName: "Instituto Técnico de Barueri Brasílio Flores de Azevedo",
-        //   logo: "https://media.licdn.com/dms/image/C4D0BAQGR2sLYI-Lysw/company-logo_100_100/0/1631372085688/itb_barueri_fieb_logo?e=1707350400&v=beta&t=WEtC2qUXy1jgaxwgI6H_t4idIej3PH8PfbQPx5bqDPE",
-        //   subHeader: "Técnico em informática",
-        //   duration: "Janeiro de 2016 - Dezembro de 2018"
-        // }
       ]
     },
 

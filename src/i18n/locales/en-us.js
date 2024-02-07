@@ -17,7 +17,7 @@ const translations = {
       title: "Hi all, I'm Rodrigo",
       subTitle:
         "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript, Typescript and Python using cool libraries and frameworks.",
-      resumeLink: "" // Set to empty to hide the button
+      resumeLink: "#" // Set to empty to hide the button
     },
     [CONTAINERS.SOCIAL_MEDIA_LINKS]: {
       github: "https://github.com/rcvdigo",
@@ -100,7 +100,7 @@ const translations = {
       title: "Education",
       schools: [
         {
-          schoolName: "Unervisidade Estácio de Sá",
+          schoolName: "Estácio de Sá University",
           logo: require('../../assets/images/estacio.jpg'),
           subHeader: "Internet Systems Technologist",
           duration: "January de 2021 - July de 2024"

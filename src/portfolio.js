@@ -122,17 +122,11 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Unervisidade Estácio de Sá",
+      schoolName: "Universidade Estácio de Sá",
       logo: "https://media.licdn.com/dms/image/C4D0BAQF5imeMDt71KQ/company-logo_100_100/0/1672861931450/mackenzie1870_logo?e=1707350400&v=beta&t=3YCJo6aVctFfqKgu8prZmWji0GlCPThiq3reTAeoyns",
       subHeader: "Bachelor's Degree in Information Systems",
       duration: "August 2019 - July 2023"
-    },
-    // {
-    //   schoolName: "Technical education in IT",
-    //   logo: "https://media.licdn.com/dms/image/C4D0BAQGR2sLYI-Lysw/company-logo_100_100/0/1631372085688/itb_barueri_fieb_logo?e=1707350400&v=beta&t=WEtC2qUXy1jgaxwgI6H_t4idIej3PH8PfbQPx5bqDPE",
-    //   subHeader: "Technical Institute of Barueri Brasílio Flores de Azevedo",
-    //   duration: "January 2016 - December 2018"
-    // }
+    }
   ]
 };
 

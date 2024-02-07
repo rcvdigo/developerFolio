@@ -1,4 +1,14 @@
 import {CONTAINERS} from "../../utils/containers";
+import {isHireable} from "../../portfolio";
+
+
+let status = "";
+
+if (isHireable) {
+  status = "Sim";
+} else {
+  status = "Não";
+}
 
 const translations = {
   translations: {
@@ -133,10 +143,14 @@ const translations = {
     },
     [CONTAINERS.CONTACT_INFO]: {
       title: "Contate-me ☎️",
-      subtitle:
-        "Discutir um projeto ou somente para dizer oi? Minha caixa de entrada está aberta para conversas",
-      number: "+55-11941982086",
+      subtitle: "Discutir um projeto ou somente para dizer oi? Minha caixa de entrada está aberta para conversas",
+      "bio": "Desenvolvimento de Softwares: Como Analista de Sistemas na Global Hitss, destaco minha proficiência em linguagens como C#, Java, TypeScript e Python, incorporando frameworks específicos para otimizar o desenvolvimento de soluções inovadoras. No caso do C#, utilizo frameworks como o ASP.NET para construir aplicações web robustas e eficientes, garantindo alto desempenho e escalabilidade.",
+      number: "+55(11)94198-2086",
       emailAddress: "rcvdigo@gmail.com" // TODO: change email
+    },
+    [CONTAINERS.ISHIRED]: {
+      hired_title: "Aberto para oportunidades",
+      status: status
     }
   }
 };

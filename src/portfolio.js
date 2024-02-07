@@ -354,7 +354,7 @@ const contactInfo = {
   title: emoji("Contate-me ☎️"),
   subtitle:
     "Discutir um projeto ou somente para dizer oi? Minha caixa de entrada está aberta para conversas.",
-  number: "+55-941982086",
+  number: "+55-1194198-2086",
   email_address: "rcvdigo@gmail.com"
 };
 

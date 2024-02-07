@@ -1,4 +1,13 @@
 import {CONTAINERS} from "../../utils/containers";
+import {isHireable} from "../../portfolio";
+
+let status = "";
+
+if (isHireable) {
+  status = "Yes";
+} else {
+  status = "No";
+}
 
 const translations = {
   translations: {
@@ -133,10 +142,14 @@ const translations = {
     },
     [CONTAINERS.CONTACT_INFO]: {
       title: "Contact Me ☎️",
-      subtitle:
-        "Discuss a project or just want to say hi? My Inbox is open for all.",
+      subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+      bio: "Software Development: As a Systems Analyst at Global Hitss, I highlight my proficiency in languages ​​such as C#, Java, TypeScript and Python, incorporating specific frameworks to update the development of innovative solutions. In the case of C#, it uses frameworks such as ASP.NET to build robust and efficient web applications, ensuring high performance and scalability.",
       number: "+55-11941982086",
       emailAddress: "rcvdigo@gmail.com" // TODO: change email
+    },
+    [CONTAINERS.ISHIRED]: {
+      hired_title: "Open for opportunities",
+      status: status
     }
   }
 };

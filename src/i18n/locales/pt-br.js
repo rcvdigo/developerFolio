@@ -16,7 +16,7 @@ const translations = {
       title: "Olá, eu sou o Rodrigo",
       subTitle:
         "Um programador de software Full Stack apaixonado 🚀 com experiência na criação de aplicações Web e Mobile com JavaScript, Typescript e Python, utilizando bibliotecas e frameworks incríveis.",
-      resumeLink: "#" // Set to empty to hide the button
+      resumeLink: "" // Set to empty to hide the button
     },
     [CONTAINERS.SOCIAL_MEDIA_LINKS]: {
       github: "https://github.com/rcvdigo",

@@ -45,7 +45,7 @@ export default function GithubRepoCard({repo, isDark}) {
           </p>
           <div className="repo-stats">
             <div className="repo-left-stat">
-              {repo?.node?.primaryLanguage !== null ||
+              {/* {repo?.node?.primaryLanguage !== null ||
                 (repo?.primaryLanguage !== null && (
                   <span>
                     <div
@@ -61,7 +61,30 @@ export default function GithubRepoCard({repo, isDark}) {
                         repo.primaryLanguage.name}
                     </p>
                   </span>
-                ))}
+                ))} */}
+              {repo?.node?.primaryLanguage && (
+                <span>
+                  <div
+                    className="language-color"
+                    style={{
+                      backgroundColor: repo.node.primaryLanguage.color
+                    }}
+                  ></div>
+                  <p>{repo.node.primaryLanguage.name}</p>
+                </span>
+              )}
+
+              {!repo?.node?.primaryLanguage && repo?.primaryLanguage && (
+                <span>
+                  <div
+                    className="language-color"
+                    style={{
+                      backgroundColor: repo.primaryLanguage.color
+                    }}
+                  ></div>
+                  <p>{repo.primaryLanguage.name}</p>
+                </span>
+              )}                
               <span>
                 <svg
                   aria-hidden="true"
